@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Justin Resume</title>
+    <meta name="description" content="Justin Resume">
+    <meta name="author" content="justinsweng">
+
+    <style>
+        * {
+            font-family: 'Nunito', sans-serif;
+            color: white;
+        }
+
+        body {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        header {
+            background: #659DBD;
+            display: flex;
+            padding: 2rem;
+        }
+
+        main {
+            background: #659DBD;
+        }
+
+        footer {
+            background: black;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .flexbox-container {
+            display: flex;
+        }
+
+        .flexbox-item {
+            width: 200px;
+            margin: 10px;
+        }
+
+        .flexbox-item-1 {
+            flex-grow: 1;
+            max-height: 350px;
+
+            display: grid;
+            place-items: center;
+        }
+
+        .flexbox-item-2 {
+            flex-grow: 3;
+            min-height: 500px;
+            background-color: #d3eaff;
+        }
+
+        .profile-img {
+            z-index: 1;
+        }
+
+        .menu{
+            margin-top: 25px;
+            margin-left: 50%;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 25px;
+            margin-right: 30px;
+        }
+
+        h1 {
+            margin-top: 10px;
+        }
+
+        h2 {
+            position: absolute;
+            z-index: 2;
+            top: 400px;
+            left: 120px;
+            width: 100%;
+        }
+
+        h2 span {
+            color: white;
+            font: bold 24px/45px Helvetica, Sans-Serif;
+            letter-spacing: -1px;
+            background: rgb(0, 0, 0);
+            /* fallback color */
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        h2 span.spacer {
+            padding: 0 5px;
+        }
+
+        #menu {
+            margin:0;
+        }
+    </style>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my Page!</h1>
+
+        <nav class="menu">
+            <a href="#">About Me</a>
+            <a href="#">My Skills</a>
+            <a href="#">Hobbies</a>
+        </nav>
+    </header>
+    <main>
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1">
+                <img src="profile.jpg" alt="Justin Barnes Profile" class="profile-img">
+                <h2><span>Justin Barnes<span class='spacer'></span><br /><span class='spacer'></span>Software
+                        Engineer</span></h2>
+            </div>
+            <div class="flexbox-item flexbox-item-2">
+            </div>
+        </div>
+    </main>
+    <footer>Contact me — Example@gmail.com</footer>
+</body>
+
+</html>
